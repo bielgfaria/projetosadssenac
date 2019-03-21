@@ -4,7 +4,7 @@ package ExerciciosDia20;
 import java.util.Scanner;
 
 
-public class numerosInteirosMedias {
+public class Exercicio3 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);        
         double double1 = teclado.nextDouble();

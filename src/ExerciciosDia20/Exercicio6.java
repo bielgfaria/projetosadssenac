@@ -3,7 +3,7 @@ package ExerciciosDia20;
 
 import javax.swing.JOptionPane;
 
-public class joptionpane3 {
+public class Exercicio6 {
 
     public static void main(String[] args) {
         String s = JOptionPane.showInputDialog("Digite o primeiro numero");
