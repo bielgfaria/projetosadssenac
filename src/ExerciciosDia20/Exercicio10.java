@@ -18,7 +18,7 @@ public class Exercicio10 {
         String t1 = JOptionPane.showInputDialog("DIGITE A TEMPERATURA: ");
         double n1 = Double.valueOf(t1);
         double farenheit = n1 * 1.8 + 32;
-        double celcius = n1 - 32 / 1.8;
+        double celcius = (n1 - 32) / 1.8;
         Object[] temperatura = {"Celsius p/ farenheit", "Farenheit p/celsius"};
 
         String valor1 = String.valueOf(JOptionPane.showInputDialog(
