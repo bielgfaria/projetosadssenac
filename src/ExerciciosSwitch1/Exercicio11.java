@@ -12,66 +12,59 @@ import javax.swing.JOptionPane;
  * @author 55489
  */
 public class Exercicio11 {
-    public static void main( String args[] )
 
-{
+    public static void main(String args[]) {
 
+        String a, b, escolha;
 
+        int es;
 
-String a, b, escolha;
+        float c, d, e;
 
-int es;
+        escolha = JOptionPane.showInputDialog(" Digite 0 para soma, \n Digite 1 para subtraçao, \n Digite 2 para divisao, \n Digite 3 para multiplicacao.");
 
-float c, d, e;
+        es = Integer.parseInt(escolha);
 
+        a = JOptionPane.showInputDialog("Digite o primeiro numero");
 
+        c = Float.parseFloat(a);
 
-escolha = JOptionPane.showInputDialog (" Digite 0 para soma, \n Digite 1 para subtraçao, \n Digite 2 para divisao, \n Digite 3 para multiplicacao.");
+        b = JOptionPane.showInputDialog("Digite o segundo numero");
 
-es = Integer.parseInt(escolha);
+        d = Float.parseFloat(b);
 
-a = JOptionPane.showInputDialog ("Digite o primeiro numero");
+        switch (es) {
 
-c = Float.parseFloat(a);
+            case 0:
 
-b = JOptionPane.showInputDialog ("Digite o segundo numero");
+                e = c + d;
 
-d = Float.parseFloat(b);
+                JOptionPane.showMessageDialog(null, "Resultado da soma: " + e, "Feito", JOptionPane.PLAIN_MESSAGE);
+                break;
 
+            case 1:
 
+                e = c - d;
 
-switch (es)
+                JOptionPane.showMessageDialog(null, "Resultado da subtracao: " + e, "Feito", JOptionPane.PLAIN_MESSAGE);
+                break;
 
-{
+            case 2:
 
-case 0:
+                e = c / d;
 
-e = c + d;
+                JOptionPane.showMessageDialog(null, "Resultado da divisao: " + e, "Feito", JOptionPane.PLAIN_MESSAGE);
+                break;
 
-JOptionPane.showMessageDialog(null, "Resultado da soma: " + e, "Feito", JOptionPane.PLAIN_MESSAGE );break;
+            case 3:
 
-case 1:
+                e = c * d;
 
-e = c - d;
+                JOptionPane.showMessageDialog(null, "Resultado da multiplicacao: " + e, "Feito", JOptionPane.PLAIN_MESSAGE);
+                break;
 
-JOptionPane.showMessageDialog(null, "Resultado da subtracao: " + e, "Feito", JOptionPane.PLAIN_MESSAGE );break;
+        }
 
-case 2:
-
-e = c / d;
-
-JOptionPane.showMessageDialog(null, "Resultado da divisao: " + e, "Feito", JOptionPane.PLAIN_MESSAGE );break;
-
-case 3:
-
-e = c * d;
-
-JOptionPane.showMessageDialog(null, "Resultado da multiplicacao: " + e, "Feito", JOptionPane.PLAIN_MESSAGE );break;
-
-}
-
-System.exit(0);
-
-}
+    }
 
 }
