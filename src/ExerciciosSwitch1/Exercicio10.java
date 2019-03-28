@@ -19,13 +19,18 @@ public class Exercicio10 {
         double n1 = Double.valueOf(t1);
         double farenheit = n1 * 1.8 + 32;
         double celcius = (n1 - 32) / 1.8;
-        Object[] temperatura = {"Celsius p/ farenheit", "Farenheit p/celsius"};
+        String [] temperatura = {"Celsius p/ farenheit", "Farenheit p/celsius"};
 
         String valor1 = String.valueOf(JOptionPane.showInputDialog(
                 null, "Selecione uma opção abaixo:", "ESCOLHA", JOptionPane.QUESTION_MESSAGE, null,
                 temperatura, temperatura[1]));
-        JOptionPane.showMessageDialog(null, "CELCIUS:  " + (int) celcius + " Cº");
-        JOptionPane.showMessageDialog(null, "FARENHEIT:  " + farenheit + " Fº");
+
+        if (valor1.equalsIgnoreCase("Celsius p/ farenheit")) {
+            JOptionPane.showMessageDialog(null, "FARENHEIT:  " + farenheit + " Fº");
+        } else {
+
+            JOptionPane.showMessageDialog(null, "CELCIUS:  " + (int) celcius + " Cº");
+        }
 
     }
 }

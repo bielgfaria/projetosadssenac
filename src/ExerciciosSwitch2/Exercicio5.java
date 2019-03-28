@@ -8,6 +8,31 @@ Obtenha o resto da divisão inteiro do primeiro pelo segundo e execute conforme:
  */
 package ExerciciosSwitch2;
 
+import javax.swing.JOptionPane;
+
 public class Exercicio5 {
+
+    public static void main(String[] args) {
+        int num1 = Integer.parseInt(JOptionPane.showInputDialog("DIGITE O PRIMEIRO NUMERO: "));
+        int num2 = Integer.parseInt(JOptionPane.showInputDialog("DIGITE O SEGUNDO NUMERO: "));
+        int divisao = num1 % num2;
+        if (divisao == 0) {
+            JOptionPane.showMessageDialog(null, "BAZINGA.");
+        }
+        if (divisao == 1) {
+            JOptionPane.showMessageDialog(null, "SOMA DOS INTEIROS: " + (num1 + num2));
+
+        }
+        if (divisao == 2) {
+            JOptionPane.showMessageDialog(null,"MULTIPLICAÇAO: " + (num1 * num2));
+            
+        }
+        if (divisao == 5) {
+            JOptionPane.showMessageDialog(null, "QUADRADO DO PRIMEIRO E SEGUNDO: " + (num1*num1)  + " " + (num2*num2));
+            
+            
+        }
+
+    }
 
 }
