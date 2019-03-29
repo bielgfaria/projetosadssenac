@@ -15,11 +15,11 @@ import javax.swing.JOptionPane;
 public class Exercicio10 {
 
     public static void main(String[] args) {
-        String t1 = JOptionPane.showInputDialog("DIGITE A TEMPERATURA: ");
-        double n1 = Double.valueOf(t1);
-        double farenheit = n1 * 1.8 + 32;
-        double celcius = (n1 - 32) / 1.8;
-        String [] temperatura = {"Celsius p/ farenheit", "Farenheit p/celsius"};
+        Double t1 = Double.parseDouble(JOptionPane.showInputDialog("DIGITE A TEMPERATURA: "));
+
+        double farenheit = t1 * 1.8 + 32;
+        double celcius = (t1 - 32) / 1.8;
+        String[] temperatura = {"Celsius p/ farenheit", "Farenheit p/celsius"};
 
         String valor1 = String.valueOf(JOptionPane.showInputDialog(
                 null, "Selecione uma opção abaixo:", "ESCOLHA", JOptionPane.QUESTION_MESSAGE, null,
@@ -28,6 +28,11 @@ public class Exercicio10 {
         if (valor1.equalsIgnoreCase("Celsius p/ farenheit")) {
             JOptionPane.showMessageDialog(null, "FARENHEIT:  " + farenheit + " Fº");
         } else {
+            
+            
+            
+            
+            
 
             JOptionPane.showMessageDialog(null, "CELCIUS:  " + (int) celcius + " Cº");
         }
