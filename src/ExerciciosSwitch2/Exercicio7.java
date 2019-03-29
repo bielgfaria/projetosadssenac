@@ -46,16 +46,13 @@ public class Exercicio7 {
             troco = troco - (qtdCedulas2 * 2);
             txt += "\n" + qtdCedulas2 + "x 2";
         }
-             if (troco / 1 > 0) {
+        if (troco / 1 > 0) {
             int qtdCedulas1 = troco / 1;
             troco = troco - (qtdCedulas1 * 1);
             txt += "\n" + qtdCedulas1 + "x 1";
         }
-        
-       JOptionPane.showMessageDialog(null, txt);
-        
-        
+
+        JOptionPane.showMessageDialog(null, txt);
+
     }
 }
-
-
