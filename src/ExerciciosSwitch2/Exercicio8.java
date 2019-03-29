@@ -3,6 +3,19 @@
  */
 package ExerciciosSwitch2;
 
-public class Exercicio8 {
+import javax.swing.JOptionPane;
 
-}
+public class Exercicio8 {
+    public static void main(String[] args) {
+        int num1 = Integer.parseInt(JOptionPane.showInputDialog("DIGITE O PRIMEIRO NUMERO: "));
+        int num2 = Integer.parseInt(JOptionPane.showInputDialog("DIGITE O SEGUNDO NUMERO: "));
+        int num3 = Integer.parseInt(JOptionPane.showInputDialog("DIGITE O TERCEIRO NUMERO: "));
+        
+            
+        }
+        
+    }
+    
+    
+
+
